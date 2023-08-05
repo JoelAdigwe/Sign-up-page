@@ -89,29 +89,51 @@ body .sign-up .right form {
   align-items: center;
   margin-top: 50px;
 }
+body .sign-up .right form .envelope {
+  border: 1px solid #d0d0d0;
+  height: 43px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+body .sign-up .right form .envelope .fa-envelope {
+  padding-left: 10px;
+  color: #d0d0d0;
+}
+body .sign-up .right form .lock {
+  border: 1px solid #d0d0d0;
+  height: 43px;
+  border-radius: 4px;
+  position: relative;
+}
+body .sign-up .right form .lock .fa-lock {
+  padding-left: 12px;
+  color: #d0d0d0;
+}
+body .sign-up .right form .lock .fa-eye {
+  color: #d0d0d0;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
 body .sign-up .right form .input {
   width: 358px;
   height: 40px;
   margin-bottom: 20px;
   border-color: #d0d0d0;
   outline: none;
-  border-style: solid;
+  border-style: none;
 }
-body .sign-up .right form .email {
-  background-image: url(./images/icon.png);
-  background-repeat: no-repeat;
-  background-position: left;
+body .sign-up .right form .pass::-moz-placeholder {
+  padding-left: 12px;
 }
-body .sign-up .right form .pass {
-  background-image: url(./images/lock.png);
-  background-repeat: no-repeat;
-  background-position: left;
+body .sign-up .right form .pass::placeholder {
+  padding-left: 12px;
 }
 body .sign-up .right form ::-moz-placeholder {
-  padding-left: 28px;
+  padding-left: 8px;
 }
 body .sign-up .right form ::placeholder {
-  padding-left: 28px;
+  padding-left: 8px;
 }
 body .sign-up .right .forgot {
   color: var(--schemas-jnt-primary-light-color, #6F74DD);
@@ -123,6 +145,7 @@ body .sign-up .right .forgot {
   line-height: normal;
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 body .sign-up .right .log-in {
   width: 356px;
@@ -132,6 +155,10 @@ body .sign-up .right .log-in {
   color: #fff;
   margin-top: 20px;
   border-color: #3949AB;
+}
+body .sign-up .right .log-in:hover {
+  background-color: #FFF;
+  color: #3949AB;
 }
 body .sign-up .right p {
   text-align: center;
@@ -190,4 +217,8 @@ body .sign-up .right .reg-btn {
   color: #3949AB;
   margin-top: 20px;
   border-color: #3949AB;
+}
+body .sign-up .right .reg-btn:hover {
+  background-color: #3949AB;
+  color: #FFF;
 }/*# sourceMappingURL=signup.css.map */
